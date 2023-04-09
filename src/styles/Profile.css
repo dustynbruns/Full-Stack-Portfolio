@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    background-color: #19242e;
+    background-color: transparent;
     padding: 20px;
 }
 
@@ -14,9 +14,12 @@
 .profile-image {
     width: 275px;
     height: 300px;
-    display: block;
-    padding-left: 50px;
-    border-color: aqua;
+    display: inline-flex;
+    border: 10px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    padding-left: 0px;
+    border-color: #ffffff;
     margin: 100px;
     object-fit: cover;
+    overflow: hidden;
 }

@@ -6,13 +6,13 @@ import '../styles/Profile.css';
 const Profile = () => {
   return (
     <Box className="profile-container">
-      <img src={profileImage} alt="Profile" className="profile-image"/>
+        <img src={profileImage} alt="Profile" className="profile-image"/>
       <Box>
         <Typography variant="h3" className="profile-text">
-          Your Name
+          Dustyn Bruns
         </Typography>
         <Typography className="profile-text">
-          Brief description about yourself, your experience, and your background.
+          Full-Stack Web Developer
         </Typography>
       </Box>
     </Box>

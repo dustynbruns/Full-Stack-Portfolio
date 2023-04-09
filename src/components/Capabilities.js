@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Capabilities.css';
+import { Link } from 'react-router-dom';
 
 const Capabilities = () => {
   return (
@@ -12,7 +13,9 @@ const Capabilities = () => {
         Curabitur lacinia euismod dolor, vel fermentum libero consequat id.
         Nullam interdum enim vel metus sagittis, vitae aliquet odio gravida.
       </p>
-      <button className="contact-button">Contact Me</button>
+      <Link to="/contact">
+        <button className="contact-button">Contact Me</button>
+      </Link>
     </div>
   );
 };
