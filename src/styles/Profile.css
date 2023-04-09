@@ -15,10 +15,10 @@
     width: 275px;
     height: 300px;
     display: inline-flex;
-    border: 10px solid #ffffff;
+    border: 10px solid aqua;
     box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
     padding-left: 0px;
-    border-color: #ffffff;
+    border-color: rgb(4, 23, 96);
     margin: 100px;
     object-fit: cover;
     overflow: hidden;
