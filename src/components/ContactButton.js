@@ -1,18 +1,18 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import './styles/ContactButton.css';
+import { useNavigate } from 'react-router-dom';
+import '../styles/ContactButton.css';
 
 const ContactButton = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push('/contact');
+    navigate('/contact');
   };
 
   return (
-    <button className="contact-button" onClick={handleClick}>
-      Contact Me
-    </button>
+    <div className="contact-button">
+      <button onClick={handleClick}>Contact Me</button>
+    </div>
   );
 };
 

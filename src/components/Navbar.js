@@ -1,34 +1,35 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './styles/Navbar.css';
-import handshakeIcon from 'path/to/handshakeIcon';
-import calculatorIcon from 'path/to/calculatorIcon';
-import weatherIcon from 'path/to/weatherIcon';
-import gameIcon from 'path/to/gameIcon';
+import { Link } from 'react-router-dom';
+import { FaHandshake, FaCalculator, FaCloudSun, FaGamepad } from 'react-icons/fa';
+import '../styles/Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul className="nav-list">
-        <li>
-          <NavLink to="/contact" activeClassName="active-link">
-            <img src={handshakeIcon} alt="Contact" className="nav-icon" />
-          </NavLink>
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <Link to="/contact" className="navbar-link">
+            <FaHandshake />
+            <span>Contact</span>
+          </Link>
         </li>
-        <li>
-          <NavLink to="/calculator" activeClassName="active-link">
-            <img src={calculatorIcon} alt="Calculator" className="nav-icon" />
-          </NavLink>
+        <li className="navbar-item">
+          <Link to="/calculator" className="navbar-link">
+            <FaCalculator />
+            <span>Calculator</span>
+          </Link>
         </li>
-        <li>
-          <NavLink to="/weather" activeClassName="active-link">
-            <img src={weatherIcon} alt="Weather" className="nav-icon" />
-          </NavLink>
+        <li className="navbar-item">
+          <Link to="/weather" className="navbar-link">
+            <FaCloudSun />
+            <span>Weather</span>
+          </Link>
         </li>
-        <li>
-          <NavLink to="/game" activeClassName="active-link">
-            <img src={gameIcon} alt="Game" className="nav-icon" />
-          </NavLink>
+        <li className="navbar-item">
+          <Link to="/game" className="navbar-link">
+            <FaGamepad />
+            <span>Game</span>
+          </Link>
         </li>
       </ul>
     </nav>

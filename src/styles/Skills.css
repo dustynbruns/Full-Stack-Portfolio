@@ -8,8 +8,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 1rem;
+}
+
+.skills-title {
+    text-align: center;
 }
 
 .skill {
@@ -20,7 +24,7 @@
 }
 
 .skill-logo {
-    width: 60px;
-    height: 60px;
+    width: 350px;
+    height: 200px;
     margin-bottom: 1rem;
 }

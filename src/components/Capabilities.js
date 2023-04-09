@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Capabilities.css';
+import '../styles/Capabilities.css';
 
 const Capabilities = () => {
   return (
