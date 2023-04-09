@@ -8,8 +8,8 @@
     cursor: pointer;
     margin-top: 1rem;
     transition: background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
+}
+
+.contact-button:hover {
     background-color: #2980b9;
-  }
+}

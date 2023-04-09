@@ -2,33 +2,33 @@
     background-color: #34495e;
     color: #ecf0f1;
     padding: 2rem;
-  }
-  
-  .header-content {
+}
+
+.header-content {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .header-photo {
+}
+
+.header-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 2rem;
-  }
-  
-  .header-description {
+}
+
+.header-description {
     max-width: 600px;
-  }
-  
-  .header-description h1 {
+}
+
+.header-description h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .header-description p {
+}
+
+.header-description p {
     font-size: 1.1rem;
-  }
+}
