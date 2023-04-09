@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHandshake, FaCalculator, FaCloudSun, FaGamepad } from 'react-icons/fa';
+import { FaHandshake, FaCalculator, FaCloudSun, FaGamepad, FaHome } from 'react-icons/fa';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
+        <li className="navbar-item">
+          <Link to="/" className="navbar-link">
+            <FaHome />
+            <span>Home</span>
+          </Link>
+        </li>
         <li className="navbar-item">
           <Link to="/contact" className="navbar-link">
             <FaHandshake />
