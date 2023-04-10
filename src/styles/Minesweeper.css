@@ -1,0 +1,51 @@
+.minesweeper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  
+  .minesweeper h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .minesweeper .board {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .minesweeper .row {
+    display: flex;
+  }
+  
+  .minesweeper .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .minesweeper .cell.revealed {
+    background-color: #f0f0f0;
+  }
+  
+  .minesweeper .cell.mine {
+    background-color: #f00;
+  }
+  
+  .minesweeper .winner-message,
+  .minesweeper .loser-message {
+    margin-top: 1rem;
+  }
+
+  .mine-circle {
+    background-color: red;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }

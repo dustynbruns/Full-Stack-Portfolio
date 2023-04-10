@@ -1,0 +1,17 @@
+.breakout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .breakout h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .breakout canvas {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+  }
