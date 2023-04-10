@@ -1,0 +1,118 @@
+.weather-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+  }
+
+  .weather-container h1 {
+    color: white;
+    padding: 5px;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .weather-daily {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    height: 30vh;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin: 0.5rem;
+    color: #fff;
+  }
+  
+  .weather-input {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 1rem;
+  }
+  
+  .weather-submit {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #5b93f9;
+    color: #4369fd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .weather-submit:hover {
+    background-color: #6f8fb4;
+  }
+  
+  .weather-info h2 {
+    margin: 0.5rem 0;
+  }
+
+
+  .weather-info h3,
+  .weather-info h4 {
+    margin: 0.5rem 0;
+  }
+  
+  .weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .particles-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-height: 99vh;
+  }
+
+  .search-input {
+    height: 5vh;
+    width: 15vw;
+    font-size: 1.2rem;
+  }
+  
+  .submit-button {
+    background-color: #4e66c4;
+    margin-left: 10px;
+    border-color: aqua;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    height: 5vh;
+    width: 8vw;
+    font-size: 1.2rem;
+}
