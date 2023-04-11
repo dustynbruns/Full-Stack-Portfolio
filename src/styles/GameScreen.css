@@ -11,12 +11,14 @@
     padding-bottom: 15px;
   }
   
-  .game-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 200px);
-    gap: 20px;
-  }
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 440px; /* Add max-width */
+}
   
   .game-tile {
     display: flex;
@@ -24,10 +26,22 @@
     justify-content: center;
     width: 200px;
     height: 200px;
-    background-color: #f0f0f0;
+    background-color: #fb1f1f;
     border: 1px solid #ddd;
     cursor: pointer;
+    padding: 10px; /* Add padding */
+    box-sizing: border-box; /* Add box-sizing */
   }
+
+  .game-title h3 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
+
   
   .overlay {
     position: fixed;
@@ -56,10 +70,28 @@
     padding-top: 10vh;
   }
  
+  .game-title.tic-tac-toe {
+    background-image: url('../assets/tic-tac-toe-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   
+  .game-title.minesweeper {
+    background-image: url('../assets/minesweeper-image.png');
+    background-size: cover;
+    background-position: center;
+  }
   
+  .game-title.higher-or-lower {
+    background-image: url('../assets/higher-or-lower-image.png');
+    background-size: cover;
+    background-position: center;
+  }
   
-  
-  
+  .game-title.break-out {
+    background-image: url('../assets/break-out-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   
   

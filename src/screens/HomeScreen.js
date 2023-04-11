@@ -1,18 +1,17 @@
 import React from 'react';
-import Header from '../components/Profile';
+import Profile from '../components/Profile';
 import Skills from '../components/Skills';
 import Capabilities from '../components/Capabilities';
 import ParticlesBg from 'particles-bg';
+import '../styles/HomeScreen.css';
 
 const HomeScreen = () => {
   return (
     <div className="home-screen">
-      <>
-        <Header />
+        <Profile />
         <Skills />
         <Capabilities />
-      </>
-      <ParticlesBg type="cobweb" color="#ffffff" num={50} bg={true} />
+      <ParticlesBg type="cobweb" color="#ffffff" num={400} bg={true} />
     </div>
   );
 };

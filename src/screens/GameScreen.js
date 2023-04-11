@@ -34,57 +34,21 @@ const GameScreen = () => {
         <div className="game-screen">
             <h1>Games</h1>
             <div className="game-grid">
-                <div className="game-tile" onClick={() => openGame(<TicTacToe />)}>
+                <div className="game-tile game-title tic-tac-toe" onClick={() => openGame(<TicTacToe />)}>
                     <h3>Tic Tac Toe</h3>
                 </div>
-                <div className="game-tile" onClick={() => openGame(<Minesweeper />)}>
+                <div className="game-tile game-title minesweeper" onClick={() => openGame(<Minesweeper />)}>
                     <h3>Minesweeper</h3>
                 </div>
-                <div className="game-tile" onClick={() => openGame(<Breakout />)}>
+                <div className="game-tile game-title break-out" onClick={() => openGame(<Breakout />)}>
                     <h3>Breakout</h3>
-                </div>   
-                <div className="game-tile" onClick={() => openGame(<HigherOrLower />)}>
+                </div>
+                <div className="game-tile game-title higher-or-lower" onClick={() => openGame(<HigherOrLower />)}>
                     <h3>Higher or Lower</h3>
                 </div>
             </div>
             {renderOverlay()}
-            <ParticlesBg
-                className="particles-bg"
-                type="polygon"
-                num={10}
-                color="#34495e"
-                lineLinked={{
-                    enable: true,
-                    distance: 150,
-                    color: "#ffffff",
-                    opacity: 0.4,
-                    width: 1,
-                }}
-                move={{
-                    enable: true,
-                    speed: 3,
-                    direction: "none",
-                    random: false,
-                    straight: false,
-                    outMode: "out",
-                    bounce: false,
-                    attract: { enable: false, rotateX: 600, rotateY: 1200 },
-                }}
-                polygon={{
-                    nb_sides: 5,
-                }}
-                opacity={{
-                    value: 0.5,
-                    random: false,
-                    anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-                }}
-                size={{
-                    value: 3,
-                    random: true,
-                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-                }}
-                bg={true}
-            />
+            <ParticlesBg type="lines" bg={true} num={100} />
 
         </div>
     );

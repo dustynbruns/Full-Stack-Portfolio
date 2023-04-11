@@ -88,7 +88,7 @@ const WeatherScreen = () => {
           ))}
         </div>
       </div>
-      <ParticlesBg className="particles-bg" type="lines" num={10} color="#34495e" bg={true} />
+      <ParticlesBg className="particles-bg" type="lines" num={100} bg={true} />
     </div>
   );
 };

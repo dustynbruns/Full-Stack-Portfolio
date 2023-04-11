@@ -58,12 +58,16 @@ const CalculatorScreen = () => {
             "1",
             "2",
             "3",            
-            "sqrt",
+            "+",
             "(",
             "0",
             ")",
             "-",
             "^",
+            ".",
+            "=",
+            "C",
+            "!",
             "sin",
             "cos",
             "tan",
@@ -81,11 +85,7 @@ const CalculatorScreen = () => {
             "ceil",
             "exp",
             "ln",
-            ".",
-            "!",
-            "+",
-            "=",
-            "C",
+            "sqrt",
             "backspace"
           ].map((button) => (
             <>
@@ -145,7 +145,7 @@ const CalculatorScreen = () => {
           ))}
         </div>
       </div>
-      <ParticlesBg type="circle" bg={true} />
+      <ParticlesBg type="lines" bg={true} num={100} />
     </div>
   );
 };

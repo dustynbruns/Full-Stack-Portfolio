@@ -1,12 +1,19 @@
 .minesweeper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
   
   .minesweeper h2 {
     margin-bottom: 1rem;
+    color: #f0f0f0;
   }
   
   .minesweeper .board {

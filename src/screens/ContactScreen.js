@@ -9,7 +9,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function ContactScreen() {
     return (
-      <div className="ContactScreen">
+      <div className="contact-container">
         <div className="card">
           <img className="card-image" src={Handshake} alt="Your description" />
           <h2 className="card-title card-text">Let's get in touch!</h2>
@@ -38,7 +38,7 @@ function ContactScreen() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-          <ParticlesBg type="cobweb" color="#ffffff" num={50} bg={true} />
+          <ParticlesBg type="cobweb" color="#ffffff" num={500} bg={true}/>
         </div>
       </div>
     );
